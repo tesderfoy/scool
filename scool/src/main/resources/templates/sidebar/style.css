@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    left: 0;
+    top: 0;
+    background-color: #3c8dbc;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar h1 {
+    margin-left: 16px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #ddd;
+}
+
+.main {
+    margin-left: 200px;
+    padding: 15px;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.main .container {
+    max-width: calc(100% - 30px);
+}
+
+.main h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #3c8dbc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main .btn:hover {
+    background-color: #3071a9;
+}
+
+.main .btn.btn-danger {
+    background-color: #d9534f;
+}
+
+.main .btn.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.main .btn.btn-sm {
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 100px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.center-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.btn-row {
+    margin-bottom: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}

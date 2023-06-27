@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Электронный журнал</title>
+
+<body>
+<h1>Electron journal</h1><hr>
+<h4>Список студентов</h4>
+<#list students as user>
+    <div>
+        <p>${user.name} ${user.surname} | <a href="/user/${user.id}">Подробнее</a> </p>
+    </div>
+
+</#list>
+<hr>
+<h3>Добавить нового ученика</h3>
+<form action="/user/create" method="post">
+    Имя ученика: <input type="text", name="name"/><br><br>
+    Фамилия ученика: <input type="text", name="surname"/><br><br>
+<input type="submit" value="Добавить"/>
+
+</form>
+</body>
+</head>
+</html>

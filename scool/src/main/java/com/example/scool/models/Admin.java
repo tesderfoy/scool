@@ -4,11 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 @Entity
-@Table(name = "students")
+@Table(name = "admins")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student {
+public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -16,14 +16,9 @@ public class Student {
     @OneToOne
     @JoinColumn(name = "user_id")
     private User user;
-
     @Column(name = "name")
     private String name;
-
     @Column(name = "surname")
     private String surname;
 
-    @ManyToOne
-    @JoinColumn(name = "group_id")
-    private Group group;
-    }
+}
